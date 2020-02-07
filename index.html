@@ -9,7 +9,7 @@
   <body>
     <form>
       <input id="maxResults" type="text" placeholder="Number of results" >
-      <input id="state" type="text" placeholder='Name a state' required>
+      <input id="state" type="text" placeholder='Name a state' pattern="[A-Za-z]{2}(,[A-Za-z]{2})+">
       <input type="submit">
       <div id="results"></div>
     </form>
