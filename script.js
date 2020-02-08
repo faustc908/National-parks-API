@@ -1,3 +1,5 @@
+'use strict'
+
 const NPS_key = 'H3q6H7L3ynoL4iivTIXyOAaPPPs9DR1HOXbLoOeU';
 const NPS_url = 'https://cors-anywhere.herokuapp.com/https://developer.nps.gov/api/v1';
 let lastState = '';
