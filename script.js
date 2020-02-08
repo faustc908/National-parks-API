@@ -11,14 +11,11 @@ $(function onPageReady(){
 function submitQuery () {
   $('form').submit(function (e) {
     e.preventDefault(); 
-    let userInput = parseInt( $('#maxResults').val().trim(), 10 );
+    let userInput = parseInt( $('#maxResults').val().trim(), 10 ) || 10;
     let userMax = userInput;
     const userStateReq = $('#state').val().trim();
     console.log ('Input captured: ' + userInput);
     console.log ('State input captured ' + userStateReq);
-    if ( Number.isNaN(userInput)) {
-      userMax = 10;
-    } 
     return showInfo(userMax, userStateReq)
       .then(function (data) {
         showResults(data, userInput);
